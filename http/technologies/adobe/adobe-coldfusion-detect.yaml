@@ -53,7 +53,12 @@ http:
         name: "coldfusion-2016"
         dsl:
           - "status_code==200 && (\"f1281b6866aef66e35dc36fe4f0bf990\" == md5(body))"
-
+          
+      - type: dsl
+        name: "coldfusion-2023"
+        dsl:
+          - "status_code==200 && (\"7deb033ed45dd846b7233b2b9d14323e\" == md5(body) || \"c4386eee0255b15720c35b29dc0b562f\" == md5(body))"
+  
       - type: dsl
         name: "coldfusion-2021"
         dsl:
@@ -68,4 +73,5 @@ http:
         name: "coldfusion-mx-7"
         dsl:
           - "status_code==200 && (\"cb594e69af5ba15bca453f76aca53615\" == md5(body))"
+          
 # digest: 4a0a0047304502203d4f2cc1921a363e53bdf3f6f501a9bb3d833908fa839327fd781705cade6273022100b4eaf23c02bbe1f688750cca88e8ae720d803f0603b54d5ecd2ff621cf6fe492:922c64590222798bb761d5b6d8e72950
